@@ -1,0 +1,14 @@
+.bannerBackground {
+    background: linear-gradient(to bottom, #ffdAB9, #fff5ee);
+    position: relative;
+}
+
+.bannerBackground::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 213, 182, 0) 0%, #fff5ee 100%);
+}

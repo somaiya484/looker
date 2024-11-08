@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.transition-all {
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.max-h-0 {
+    max-height: 0;
+}
+
+.max-h-96 {
+    max-height: 24rem;
+}
+
+.primary-text {
+    color: #ca541d;
+}
+
+.bg-btn {
+    background-color: #e25d29;
+    color: rgb(235, 234, 234);
+}
+
+.bg-btn:hover {
+    color: black;
+}
+
+.list-text {
+    font-size: 14px;
+    color: black;
+}
+
+.text-gradient-primary {
+    background-image: linear-gradient(to right, #ca9907, #ff7f50, #ff4500);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.bg-gradient {
+    background-image: linear-gradient(to right, #ffc107, #ff7f50, #ff4500);
+}
+
+.primary-button {
+    @apply bg-gradient-to-r from-orange-500 to-red-600;
+    border-radius: 10px;
+    padding: 9px 10px;
+    color: #ebeaea;
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    justify-content: space-between;
+    cursor: pointer;
+    border: none;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    @apply bg-gradient-to-r from-red-600 to-orange-500;
+    color: #fff;
+}
+
+.primary-button:hover {
+    transition-delay: 0s;
+}
+
+.primary-button:focus {
+    outline: none;
+    transition-delay: 0s;
+}
+
+.secondary-button {
+    background: transparent;
+    border: 2px solid #ca541d;
+    color: #ca541d;
+    padding: 9px 10px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secondary-button:hover {
+    background: transparent;
+    border-color: #e25d29;
+    color: #e25d29;
+}
+
+.services-button {
+    background: white;
+    border: 2px solid #ca541d;
+    color: #ca541d;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 1.125rem;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.services-button:hover {
+    background: #e25d29;
+    color: white;
+    border-color: #e25d29;
+}
+
+.animate-gradient {
+    background-size: 300%;
+    -webkit-animation: animatedgradient 6s ease infinite alternate;
+    -moz-animation: animatedgradient 6s ease infinite alternate;
+    animation: animatedgradient 6s ease infinite alternate;
+}
+
+.navbar-container {
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gradient-background {
+    position: relative;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFD7C2 100%);
+    text-align: center;
+}
+
+.gradient-background2 {
+    position: relative;
+    background: linear-gradient(180deg, #feddcb 0%, #FFFFFF 100%, #feddcb 0%);
+    text-align: center;
+}
+.gradient-backgroundr {
+    position: relative;
+    background: linear-gradient(180deg, #fdbd9b 0%, #fceeee 100%, #fcc2a3 0%);
+    text-align: center;
+}
+
+.service-bg {
+    background-image: linear-gradient(#ffd0b64f, #ffce8d55), url('../../public//servicebg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-background {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFEEE4 50%, #FFFFFF 100%);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.banner-background {
+    background: linear-gradient(180deg, #fef6f2 0%, #ffdAB9 50%, #fef7f7 100%);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #f57040, #ff4500, #e6ac00);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.banner-gradient {
+    background: linear-gradient(to left, #ff901a, #ff5900, #fe8b11);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.work-sample {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.work-sample:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.work-sample:hover .overlay {
+    opacity: 1;
+}
+
+.bg-gradient-to-r {
+    background: linear-gradient(to right, #ff8a00, #da1b60);
+}
+
+.hover\:from-orange-600:hover {
+    background-color: #ff8a00;
+}
+
+.hover\:to-orange-800:hover {
+    background-color: #da1b60;
+}
+
+.text-gradient {
+    background-image: linear-gradient(to right, #ff8a00, #da1b60);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.sample-bg {
+    position: relative;
+    background: linear-gradient(180deg, #fdede2 0%, #ffffff 100%);
+}
+
+.sample-style {
+    @apply work-sample shadow-lg rounded-xl relative overflow-hidden duration-300 ease-in-out transition-transform transform hover:scale-105 px-3 pt-3 shadow-lg sample-bg
+}
+
+.sample-inner-style {
+    @apply overlay absolute inset-0 flex items-center justify-center inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300
+}
+
+.sample_button {
+    @apply bg-gradient-to-r from-orange-400 to-orange-600 hover:from-orange-600 hover:to-orange-800 text-white px-6 py-3 rounded-full text-lg md:text-xl font-semibold shadow-md hover:shadow-xl transition duration-300
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
