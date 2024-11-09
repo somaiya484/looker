@@ -161,7 +161,7 @@ const Service: React.FC<ServicePageProps> = ({ sections, processSteps, workSampl
                 </div>
             </div>
 
-            <div className="page-background">
+            <div className="page-background px-3 md:px-0">
                 <div className="container mx-auto grid md:grid-cols-2 gap-16 px-2 md:px-16 lg:px-24">
                     {sections.map((section) => (
                         <div key={section.id} data-aos="fade-up" data-aos-duration="1000">

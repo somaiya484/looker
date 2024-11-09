@@ -10,8 +10,8 @@ const ContactEmail: React.FC = () => {
                     <h1 className='font-bold primary-text'>Get In Touch</h1>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1000">
-                    <h2 className='text-5xl my-9 leading-10 font-semibold'>Let's Make the Solution</h2>
-                    <p> We thrive on innovation and turning brilliant ideas into reality. Our goal is
+                    <h2 className='text-3xl md:text-5xl my-9 leading-10 font-semibold'>Let's Make the Solution</h2>
+                    <p className="text-sm md:text-base"> We thrive on innovation and turning brilliant ideas into reality. Our goal is
                     to create <br /> exceptional experiences through  meticulous execution. If you share
                     our passion, don't hesitate to reach out <br /> via phone or email to begin your
                     journey with us. Let's Talk about Looker</p>

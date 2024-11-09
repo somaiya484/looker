@@ -14,29 +14,18 @@ const Banner: React.FC = () => {
 
       <div className='relative text-center mt-10'>
         <h2 className='text-2xl md:text-6xl mx-auto font-semibold'>Unlock Insights with Powerful</h2>
-        {/* <h2 className='text-3xl md:text-6xl mx-auto font-semibold mt-5'>Looker & Reporting</h2> */}
         <h2 className='text-3xl md:text-6xl mx-auto banner-gradient font-bold pt-5 pb-3'>Looker & Reporting</h2>
 
-        <p className="md:text-base mt-3">Hexa Looker specialize in transforming complex data into clear and actionable insights. <br /> Our Looker services leverage Looker Studio to help you understand your data, make informed decisions,<br /> and drive business success.</p>
+        <p className="text-sm md:text-base mt-3">Hexa Looker specialize in transforming complex data into clear and actionable insights. <br /> Our Looker services leverage Looker Studio to help you understand your data, make informed decisions,<br /> and drive business success.</p>
       </div>
 
-      {/* <div className="text-center">
-        <p className="mt-4 text-[#45454f] font-semibold text-[22px]">
-          Harnessing Looker's capabilities to transform complex <br /> data into clear, actionable insights that enable data understanding,<br /> informed decision-making, and drive business success.
-        </p>
-      </div> */}
-
-
-
-
-      {/* <AnimatedText /> */}
 
       <div className='relative mt-9 flex flex-col md:flex-row justify-center items-center gap-5'>
-        <div className="primary-button transition-transform transform hover:scale-105 duration-400 w-[200px]">
-          <Link className="ml-6" href="/#services">Explore Services</Link>
+        <div className="primary-button transition-transform transform hover:scale-105 duration-400 md:w-[200px]">
+          <Link className="ml-6 pr-5" href="/#services">Explore Services</Link>
         </div>
 
-        <Link href='/contact' className='secondary-button w-[200px] transition-transform transform hover:scale-105 duration-300'>
+        <Link href='/contact' className='secondary-button md:w-[200px] transition-transform transform hover:scale-105 duration-300'>
           Get Free Consultation
         </Link>
       </div>

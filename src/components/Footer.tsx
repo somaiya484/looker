@@ -22,14 +22,14 @@ const Footer: React.FC<FooterProps> = ({ logoSrc, message, services, companyLink
                             width={250}
                             height={250}
                             alt="Company Logo"
-                            className="w-[250px]"
+                            className="w-[250px] mx-auto md:mx-0"
                         />
                     </Link>
                     <p className='mt-5 md:pr-10'>
                         {message}
                     </p>
                 </div>
-                
+
                 <nav className="text-center">
                     <h6 className="footer-title text-lg font-semibold mb-4">Company</h6>
                     <ul>
@@ -45,17 +45,11 @@ const Footer: React.FC<FooterProps> = ({ logoSrc, message, services, companyLink
                     <ul>
                         <li><a className="link link-hover text-gray-400 hover:underline hover:text-white" href={`mailto:${contact.email}`}>Email: {contact.email}</a></li>
                     </ul>
-                    {/* <div className="flex gap-8 items-center justify-center mt-5 md:justify-start text-2xl  text-gray-400 ">
-                        <a href='https://www.linkedin.com/company/infologicsolution/'   className='cursour-pointer hover:text-white' ><FaLinkedin /></a>
-                        <a href=' https://www.instagram.com/infologicsolution/'   className='cursour-pointer hover:text-white' ><FaInstagram /></a>
-                        <a href='https://www.facebook.com/infologicsolution/'   className='cursour-pointer hover:text-white' ><FaFacebookF /></a>
-                        <a href='https://www.youtube.com/@InfoLogicSolutions'   className='cursour-pointer hover:text-white' ><FaYoutube /></a>
-                    </div> */}
 
                 </nav>
             </div>
 
-            <div className=" flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col mt-10">
+            <div className=" flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col mt-10 text-center md:text-left">
                 <p className="caption text-n-4 lg:block">
                     © {new Date().getFullYear()} Hexa Looker | all rights reseved by Hexa Looker.
                 </p>
